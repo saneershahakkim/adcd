@@ -12,8 +12,8 @@ def extractfile(zfile, password):
     except:
         return
 def main():
-    zfile = zipfile.ZipFile('/root/zip/test.zip')
-    passfile = open('/root/login.txt')
+    zfile = zipfile.ZipFile('/root/adcd/fayaz/test.zip')
+    passfile = open('/root/adcd/fayaz/wordlist.txt')
     for line in passfile.readlines():
         password = line.strip('\n')
         guess = extractfile(zfile,password)
@@ -24,6 +24,7 @@ if __name__ == '__main__':
 
 
 # In[ ]:
+
 
 
 
